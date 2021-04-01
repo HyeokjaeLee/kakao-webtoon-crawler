@@ -1,0 +1,532 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jal_Onuel";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Eoe_Zno_L";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  letter-spacing: -0.15em;
+}
+body {
+  font-family: "GmarketSansMedium";
+  height: 100%;
+}
+hr {
+  color: #999696;
+  margin-bottom: 1%;
+}
+a:link {
+  text-decoration: none;
+  color: black; /*기존 색상코드 #999696; > 블랙으로 수정*/
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  text-decoration: none;
+  color: #999696;
+}
+a:hover {
+  color: #bfbcbc;
+}
+
+li:hover{
+  color: #bfbcbc;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clicked {
+  color: red;
+}
+
+.basic_form {
+  background-color: #ffffff; /*기존 색상코드 242424 > 화이트로 수정*/
+  margin-top: 4.5%;
+  padding-left: 17.7%;
+  padding-right: 17.7%;
+  overflow: hidden;
+  font-family: "Eoe_Zno_L";
+}
+
+.webtoon_container {
+  width: 12%;
+  float: left;
+  padding-left: 2.5%;
+  padding-bottom: 2%;
+}
+
+/*
+.main_name {
+  font-family: 'Rajdhani', sans-serif; 
+  letter-spacing: 0.1em;
+}
+/*기존 폰트 "Sunflower" > "Rajdhani"로 수정*/
+.top_display {
+  position: relative;
+}
+.top_display_title_contain {
+  /*최상단 검은색 바 컨테이너*/
+  font-family: "Jal_Onuel", sans-serif;
+  background-color: #000000d8;
+  perspective: 1000px;
+  height: 45px;
+  max-width: 100%;
+  position: relative;
+  margin: 0px;
+}
+
+.top_display_info1 {
+  /*최상단 검은색 바 컨테이너에 들어가는 텍스트 다음*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 23px;
+  transform: translate(-50%, -50%);
+}
+
+.top_display_info2 {
+  /*최상단 검은색 바 컨테이너에 들어가는 텍스트 네이버*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 23px;
+  transform: translate(-50%, -50%);
+}
+
+.top_display_info3 {
+  /*최상단 검은색 바 컨테이너에 들어가는 텍스트 올웹툰*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 23px;
+  transform: translate(-50%, -50%);
+}
+
+.top_display_info4 {
+  /*최상단 검은색 바 컨테이너에 들어가는 텍스트 홈*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 23px;
+  transform: translate(-50%, -50%);
+}
+
+.top_display_info5 {
+  /*최상단 검은색 바 컨테이너에 들어가는 텍스트 어바웃*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 23px;
+  transform: translate(-50%, -50%);
+}
+
+.top_display_menu_contain {
+  /*최상단 바 밑에 들어가는 메뉴 컨테이너*/
+  font-family: "Jal_Onuel", sans-serif;
+  background-color: #ffffff;
+  perspective: 1000px;
+  height: 60px;
+  max-width: 100%;
+  position: relative;
+  margin: 0px;
+}
+
+.top_display_menu_info {
+  /*최상단 바 밑에 들어가는 메뉴 컨테이너에 들어가는 텍스트*/
+  position: relative;
+  margin-left: 17.7%;
+  font-size: 28px;
+  letter-spacing: -0.05em;
+  float: left;
+}
+
+.top_display_recommend_info {
+  /*최상단 바 밑에 들어가는 추천 웹툰 컨테이너에 들어가는 텍스트*/
+  position: relative;
+  top: 50%;
+  left: 40%;
+  transform: translate(0%, 100%);
+  font-size: 30px;
+  letter-spacing: -0.05em;
+}
+
+.middle_display {
+  /*중단 디스플레이 클래스*/
+  position: relative;
+}
+
+.middle_display_recommend_contain {
+  /*중단 디스플레이 단일 추천 웹툰 컨테이너*/
+  font-family: "GmarketSansMedium", sans-serif;
+  background-color: black;
+  height: 200px;
+  margin-left: 17.7%;
+  margin-right: 17.7%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.middle_display_recommend_info {
+  /*중단 디스플레이 단일 추천 웹툰 컨테이너에 들어가는 텍스트*/
+  position: relative;
+  top: 50%;
+  left: 40%;
+  transform: translate(0%, 100%);
+  font-size: 30px;
+  letter-spacing: -0.05em;
+}
+
+.middle_display_daumRank_form {
+  /*중단 디스플레이 다음 웹툰 랭킹 폼*/
+  width:720px;
+  height:1020px;
+  overflow:hidden; 
+  position:relative;
+  float: left;
+  margin-left: 17.7%;
+  margin-bottom: 1%;
+
+}
+
+.middle_display_naverRank_form {
+  /*중단 디스플레이 네이버 웹툰 랭킹 폼*/
+  margin-bottom: 1%;
+  position: relative;
+  float:left;
+  width:500px;
+  height:720px;
+  overflow:hidden;
+  position:relative;
+  margin-left:13.6%;
+}
+
+.bottom_display {
+  position: relative;
+}
+
+.bottom_display_info_contain {
+  /*최하단 검은색 바 컨테이너*/
+  font-family: "Jal_Onuel", sans-serif;
+  background-color: #000000d8;
+  perspective: 1000px;
+  height: 120px;
+  max-width: 100%;
+  position: relative;
+  margin: 0px;
+  text-align: center;
+}
+
+.bottom_display_info_contain_text {
+  position: relative;
+  top: 20%;
+  font-size: 10px;
+  color: #bfbcbc;
+}
+/* .webtoon_img {
+  width: 100%;
+  object-fit: cover;
+  border: #181818;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5%;
+}
+
+.webtoon_img:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  overflow: hidden;
+} */
+
+.home_display1 {
+  font-family: "GmarketSansMedium", sans-serif;
+  background-color: black;
+  height: 150px;
+  margin-left: 17.7%;
+  margin-right: 17.7%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.home_display2 {
+  font-family: "GmarketSansMedium", sans-serif;
+  background-color: black;
+  height: 150px;
+  margin-left: 17.7%;
+  margin-right: 17.7%;
+  position: relative;
+  margin-bottom: 40px;
+
+}
+.square {
+  position: relative;
+  width: 100%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  overflow: hidden;
+}
+
+.webtoon_info {
+  line-height: 0;
+  text-align: left;
+  word-break: keep-all;
+  height: 3em;
+  width: 7em;
+  position: relative;
+  line-height: 100%;
+}
+
+.square .icon {
+  position: absolute;
+  top: 13%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/*메뉴*/
+.main-menu {
+  position: relative;
+  text-align: center;
+  float:left;
+  margin-left:9%;
+  cursor: pointer;
+}
+
+.main-menu > li {
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+  font-family: "Jal_Onuel", sans-serif;
+}
+
+.main-menu > li > a {
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0em;
+  display: block;
+  padding : 0em  1em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sub-menu {
+  position: absolute;
+  background: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+}
+
+.sub-menu > li {
+  padding: 12px 23px;
+  list-style-type: none;
+}
+
+.sub-menu > li > a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.main-menu > li:hover #sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu > li > a:hover {
+  text-decoration: underline;
+}
+
+section {
+  column-width: 15em;
+  background: #dadadf;
+  padding: 2em 12em;
+}
+
+/*검색창*/
+.top_display_search {
+  height: 40px;
+  width: 250px;
+  border: 1px solid black;
+  background: #ffffff;
+  float: right;
+  margin-right: 17.7%;
+}
+
+.top_display_search_input {
+  font-size: 14px;
+  width: 175px;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+  float: left;
+}
+
+.top_display_search_button {
+  width: 50px;
+  height: 100%;
+  border: 0px;
+  background: black;
+  outline: none;
+  float: right;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/*완결 or 요일*/
+.top_display_select {
+  text-align: center;
+  margin-bottom: 1%;
+  color: black;
+}
+
+.top_display_select_text{
+  font-size: 20px;
+  list-style-type: none;
+  display: inline-block;
+  text-shadow: 1px 1px 1px rgba(94, 94, 94, 0.432);
+  cursor: pointer;
+}
+
+.top_display_week_web {
+  background-color: #ffffff;
+  height: 50px;
+  margin-left: 17.7%;
+  margin-right: 17.7%;
+}
+
+.top_display_week {
+  text-align: center;
+  color: black;
+}
+
+.top_display_week_text{
+  font-size: 25px;
+  list-style-type: none;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 1px rgba(94, 94, 94, 0.432);
+  cursor: pointer;
+}
+
+.top_display_state {
+  text-align: center;
+  color:black;
+  display:none;
+}
+
+.top_display_state_text{
+  font-size: 25px;
+  list-style-type: none;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 1px rgba(94, 94, 94, 0.432);
+  cursor: pointer;
+}
+
+/*슬라이드 쇼*/
+.mySlides {display: none}
+.mySlides2 {display: none}
+img {vertical-align: middle;}
+
+.top_display_daum_recommend_contain {
+  max-width: 1229.340px;
+  position: relative;
+  margin: auto;
+}
+
+.top_display_naver_recommend_contain {
+  max-width: 1229.340px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.active{
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
