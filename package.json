@@ -1,0 +1,31 @@
+{
+  "name": "kakao-webtoon-crawler",
+  "version": "1.0.0",
+  "description": "카카오 웹툰 크롤링",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HyeokjaeLee/kakao-webtoon-crawler.git"
+  },
+  "author": "HyeokjaeLee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HyeokjaeLee/kakao-webtoon-crawler/issues"
+  },
+  "homepage": "https://github.com/HyeokjaeLee/kakao-webtoon-crawler#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "puppeteer": "^10.4.0",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  },
+  "devDependencies": {
+    "@types/request-promise-native": "^1.0.18",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  }
+}
