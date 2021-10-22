@@ -1,1 +1,2 @@
-console.log("test");
+import { kakao_crawler } from "./function/kakao-crawler";
+kakao_crawler();
