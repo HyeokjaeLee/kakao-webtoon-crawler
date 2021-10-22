@@ -4,7 +4,7 @@
   "description": "카카오 웹툰 크롤링",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node src/index.ts && git commit && git push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
